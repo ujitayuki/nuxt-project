@@ -21,7 +21,7 @@
                 <a class="nav-link" href="#"><i class="fas fa-heart icon"></i>お気に入り</a>
               </li>
             </ul>
-            <div class="flex-center position-ref full-height">
+            <div class="test">
               <a href="#" class="btn btn-outline-danger">会員登録</a>
               <a href="#" class="btn btn-outline-info">ログイン</a>
             </div>
@@ -33,3 +33,9 @@
       </nav>  
   </div>
 </template>
+
+<style>
+.test {
+  float: none;
+}
+</style>
