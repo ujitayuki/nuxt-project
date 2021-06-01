@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/* スライダー広告 */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  background: rgb(37, 36, 36);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 120px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, black 0%, rgba(187, 170, 170, 0) 100%);
+  content: "";
+  height: 120px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.dog_name {
+  font-weight: bold;
+  color: white;
+  margin-top: 5px;
+  padding-left: 40px;
+  font-size: 8px;
+}
+
+/* <------------------slider1----------------> */
+.slider1 {
+  background: white;
+  height: 120px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider1::before,
+.slider1::after {
+  background: linear-gradient(to right, white 0%, rgba(187, 170, 170, 0) 100%);
+  content: "";
+  height: 120px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider1::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider1::before {
+  left: 0;
+  top: 0;
+}
+
+.slider1 .slide-track1 {
+  animation: scroll 80s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider1 .slide1 {
+  height: 100px;
+  width: 250px;
+}
+
+.sponser {
+  margin-top: 100px;
+}
+
+/* <------------------レスポンシブ----------------> */
+
+@media screen and (max-width: 480px) {
+  .slider {
+    background: gray;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 50px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .slider::before,
+  .slider::after {
+    background: linear-gradient(
+      to right,
+      rgb(58, 58, 58) 0%,
+      rgba(187, 170, 170, 0) 100%
+    );
+    content: "";
+    height: 120px;
+    position: absolute;
+    width: 50px;
+    z-index: 2;
+  }
+
+  .slider .slide {
+    height: 120px;
+    width: 100px;
+  }
+
+  .slider img {
+    height: 40px;
+    width: 55px;
+  }
+
+  .dog_name {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

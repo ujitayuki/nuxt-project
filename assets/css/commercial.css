@@ -1,0 +1,28 @@
+.nav-bar {
+  height: 35px;
+  width: 100%;
+  background-color: #ff7d6e;
+}
+
+.nav-bar h1 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 7px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.container h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  .nav-bar h1 {
+    font-size: 10px;
+    text-align: center;
+    padding-top: 12px;
+    font-weight: bold;
+    color: aliceblue;
+  }
+}
