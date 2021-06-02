@@ -3,19 +3,19 @@
     <div class="footer-bg">
       <div class="container pt-4 pt-md-5">
           <div id="footer-sns" class="row align-items-center border-bottom">
-            <div class="col-6 col-lg-3 pb-4">
+            <div class="col-6 col-lg-3 pb-4 sns-title">
               <a href="#" target="_blank" rel="nofollow" class="d-flex align-items-center"><img src="~/assets/img/facebook.png"
                   alt="Official Facebook Page"><span>Official Facebook </span></a>
             </div>
-            <div class="col-6 col-lg-3 pb-4">
+            <div class="col-6 col-lg-3 pb-4 sns-title">
               <a href="#" target="_blank" rel="nofollow" class="d-flex align-items-center"><img
                   src="~/assets/img/titter.png" alt="Official Twitter"><span>Official Twitter</span></a>
             </div>
-            <div class="col-6 col-lg-3 pb-4">
+            <div class="col-6 col-lg-3 pb-4 sns-title">
               <a href="#" target="_blank" rel="nofollow" class="d-flex align-items-center"><img src="~/assets/img/youtube.png"
                   alt="Official LINE"><span>Official Youtube</span></a>
             </div>
-            <div class="col-6 col-lg-3 pb-4">
+            <div class="col-6 col-lg-3 pb-4 sns-title">
               <a href="#" target="_blank" rel="nofollow" class="d-flex align-items-center"><img src="~/assets/img/instagulam.png"
                   alt="Official Instagram"><span>Official Instagram</span></a>
             </div>
@@ -123,6 +123,13 @@ export default {
 </script>
 
 <style>
+h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 1em 0;
+}
+
 .feedback-input {
   color:black;
   font-family: Helvetica, Arial, sans-serif;
@@ -131,7 +138,7 @@ export default {
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #CC6666;
+  border:2px solid #ff7d6e;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -149,7 +156,7 @@ textarea {
 }
 
 .button-panel .button {
-  background: #f16272;
+  background: #ff7d6e;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -161,9 +168,24 @@ textarea {
   text-transform: uppercase;
   transition: background 0.3s ease-in-out;
   width: 100%;
+  border-radius: 30px;
 }
 
 .button:hover {
   background: #ee3e52;
 }
+
+
+@media screen and (max-width: 460px) {
+.list-unstyled li a{
+  font-size: 2px;
+}
+
+.sns-title a {
+  font-size: 2px;
+}
+
+}
+
+
 </style>

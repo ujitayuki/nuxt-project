@@ -144,8 +144,8 @@
 
         <!-- 検索ボックス -->
         <div class="section-container">
-          <h2 class="text-center text-white pt-5">好きなわんちゃんを見つけよう</h2>
-          <p class="text-center text-white">
+          <h2 class="text-center text-white pt-5 description-title">好きなわんちゃんを見つけよう</h2>
+          <p class="text-center text-white description-subtitle">
             <ワンちゃんの種類ごとに検索できます>
           </p>
           <div class="select-box">
@@ -207,7 +207,7 @@
             </label>
           </div>
           <div class="text-center mt-5">
-            <a href="" class="btn btn--orange">検索する</a>
+            <a href="" class="btn btn--orange serch-button">検索する</a>
           </div>
           <div class="wave">
           </div>
@@ -215,8 +215,8 @@
 
         <!-- newわんちゃん -->
         <div>
-          <h2 class="mt-5  text-center">新しいわんちゃん</h2>
-          <p class="text-center text-gray mb-5">
+          <h2 class="mt-5  text-center description-title">新しいわんちゃん</h2>
+          <p class="text-center text-gray mb-5 description-subtitle">
             <気になるワンちゃんを見つけよう>
           </p>
           <h1 class="slider_ttl">NEWわんちゃん</h1>
@@ -390,20 +390,19 @@
             <li class="border1">
               <h2>お好きなワンちゃんを選ぶ</h2>
               <img src="~/assets/img/description1.png" alt="">
-              <p class="text-right">上記の検索BOXからお好きな犬種をさがします。<br>
+              <p class="text-right">上記の検索BOXからお好きな犬種をさがします。
               その他にも「NEWわんちゃん」や「人気ランキング」からも探せます。</p>
             </li>
             <li class="border2">
-              <h2>愛犬を登録する<br>
-              <br></h2>
+              <h2>愛犬を登録する<br></h2>
               <img src="~/assets/img/description2.png" alt="">
-              <p>ご自身の愛犬も「愛犬を掲載する」から登録してみよう。<br>
+              <p>ご自身の愛犬も「愛犬を掲載する」から登録してみよう。
               わんちゃん好きの方がいっぱいです。</p>
             </li>
             <li>
               <h2>お互いのスポンサーになる</h2>
               <img src="~/assets/img/description3.png" alt="">
-              <p>お互いにスポンサーになってみよう。<br>
+              <p>お互いにスポンサーになろう。
               お好きなわんちゃんを探して、お気に入りの子のスポンサーとして寄付をしよう。
               また、ご自身の愛犬を登録して、たくさんの方にスポンサーになってもらおう。</p>
             </li>

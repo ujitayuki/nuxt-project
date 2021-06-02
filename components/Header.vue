@@ -38,7 +38,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="close_register_modal">
                 <span aria-hidden="true">&times;</span>
             </button>
-            <h1>ユーザー登録</h1>
+            <h1 class="modal-title">ユーザー登録</h1>
             <form>
               <div class="form-item">
                 <input type="name" name="name" required="required" placeholder="お名前"></input>
@@ -68,7 +68,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="close_login_modal">
                 <span aria-hidden="true">&times;</span>
             </button>
-            <h1>ログイン</h1>
+            <h1 class="modal-title">ログイン</h1>
             <form>
               <div class="form-item">
                 <input type="email" name="email" required="required" placeholder="メールアドレス"></input>
@@ -155,6 +155,8 @@ export default {
 
 h1 {
   text-align: center;
+  font-size: 25px;
+  font-weight: bold;
   padding: 1em 0;
 }
 
@@ -221,6 +223,7 @@ form {
   text-transform: uppercase;
   transition: background 0.3s ease-in-out;
   width: 100%;
+  border-radius: 30px;
 }
 
 .login-button:hover {
