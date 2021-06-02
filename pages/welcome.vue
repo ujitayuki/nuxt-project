@@ -222,7 +222,7 @@
           <h1 class="slider_ttl">NEWわんちゃん</h1>
           <ul class="card-horizontal-list text-center">
             <li>
-              <a href="#">
+              <a href="/dog-list">
                 <img src="~/assets/img/test.jpg">
                 <div>
                   <h3>name</h3>
