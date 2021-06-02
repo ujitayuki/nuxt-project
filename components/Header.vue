@@ -3,12 +3,12 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="~/assets/img/header.logo.png" alt="ヘッダーロゴ" height="80"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          <button class="navbar-toggler menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
       
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse sp-menu" id="navbarSupportedContent">
             <form class="d-flex">
               <input class="form-control me-2" type="search" aria-label="Search" placeholder="フリーワードを入力">　
               <button class="btn btn-outline-success" type="submit">Search</button>
@@ -124,6 +124,17 @@ export default {
       this.$store.dispatch('register', {name: this.name, email: this.email, password: this.password})
     }
   },
+
+  mounted() {
+    $(function(){
+      $(".menu-btn").click(function(){
+        $(".sp-menu").slideToggle(200);
+      });
+      // $(".sp-menu li a").click(function(){
+      //   $(".sp-menu").css({display:"none"});
+      // });
+    });
+  },
   
 }
 </script>
@@ -230,5 +241,51 @@ form {
 
 .form-footer a:hover {
   border-bottom: 1px dotted #8c8c8c;
+}
+
+
+@media screen and (max-width: 1024px) {
+ .head-bar {
+	background: white;
+	box-sizing: border-box;
+	height: 50px;
+	padding: 10px 2.5%;
+}
+
+
+.menu-btn {
+	display: block;
+	float: right;
+	margin: 0 auto;
+	position: relative;
+	width: 40px;
+	height: 30px;
+}
+
+
+.sp-menu {
+	display: none;
+}
+
+.sp-menu li {
+	box-sizing: border-box;
+	border-bottom: 1px solid white;
+}
+
+.sp-menu li a {
+	background: white;
+	box-sizing: border-box;
+	color: black;
+	display: block;
+	font-size: 16px;
+	line-height: 26px;
+	padding: 5px 10px;
+	text-decoration: none;
+	width: 100%;
+}
+
+.navbar-toggler-icon{
+  display: inline-block;
+}
 }
 </style>
