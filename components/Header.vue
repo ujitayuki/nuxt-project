@@ -22,8 +22,8 @@
               </li>
             </ul>
             <div class="test">
-              <a href="#" class="btn btn-outline-danger">会員登録</a>
-              <a href="#" class="btn btn-outline-info">ログイン</a>
+              <a href="#" class="btn btn-outline-danger" @click="open_register_modal">会員登録</a>
+              <a href="#" class="btn btn-outline-info" @click="open_login_modal">ログイン</a>
             </div>
           </div>
         </div>
@@ -31,11 +31,198 @@
       <nav class="nav-bar">
         <h1>わんちゃん好きと愛犬をつなぐプラットフォーム！まずは無料の会員登録から</h1>
       </nav>  
+      <Modal v-show="register_modal">
+          <div class="form-wrapper">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="close_register_modal">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h1>ユーザー登録</h1>
+            <form>
+              <div class="form-item">
+                <input type="name" name="name" required="required" placeholder="お名前"></input>
+              </div>
+              <div class="form-item">
+                <input type="email" name="email" required="required" placeholder="メールアドレス"></input>
+              </div>
+              <div class="form-item">
+                <input type="password" name="password" required="required" placeholder="パスワード"></input>
+              </div>
+              <div class="form-item">
+                <input type="password" name="password" required="required" placeholder="パスワード(確認)"></input>
+              </div>
+              <div class="button-panel">
+                <input type="submit" class="button" title="Sign In" value="登録"></input>
+              </div>
+            </form>
+            <div class="form-footer">
+              <!-- <p><a href="#">Create an account</a></p>
+              <p><a href="#">Forgot password?</a></p> -->
+              <p>すでにご登録済みの方は <a href="#">こちら</a></p>
+            </div>
+          </div>
+      </Modal>
+      <Modal v-show="login_modal">
+          <div class="form-wrapper">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="close_login_modal">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h1>ログイン</h1>
+            <form>
+              <div class="form-item">
+                <input type="email" name="email" required="required" placeholder="メールアドレス"></input>
+              </div>
+              <div class="form-item">
+                <input type="password" name="password" required="required" placeholder="パスワード"></input>
+              </div>
+              <div class="button-panel">
+                <input type="submit" class="login-button" title="Sign In" value="ログイン"></input>
+              </div>
+            </form>
+            <div class="form-footer">
+              <p>新規会員登録がお済みでない方は <a href="#">こちら</a></p>
+              <p>パスワードをお忘れの方は <a href="#">こちら</a></p>
+            </div>
+          </div>
+      </Modal>
   </div>
 </template>
 
+<script>
+import Modal from './Modal.vue'
+
+
+export default {
+  components: {
+    Modal
+  },
+  
+  data() {
+    return {
+      register_modal: false,
+      login_modal: false,
+      class_atached: false
+    }
+  },
+  methods: {
+    open_login_modal() {
+      this.login_modal = true
+    },
+    close_login_modal() {
+      this.login_modal = false
+    },
+    open_register_modal() {
+      this.register_modal = true
+      this.class_atached = true
+    },
+    close_register_modal() {
+      this.register_modal = false
+      this.class_atached = false
+    },
+    register () {
+      this.$store.dispatch('register', {name: this.name, email: this.email, password: this.password})
+    }
+  },
+  
+}
+</script>
+
+
 <style>
-.test {
-  float: none;
+.form-wrapper {
+  background: #fafafa;
+  margin: 3em auto;
+  padding: 0 1em;
+  width: 500px;
+  border-radius: 30px;
+}
+
+h1 {
+  text-align: center;
+  padding: 1em 0;
+}
+
+form {
+  padding: 0 1.5em;
+}
+
+.form-item {
+  margin-bottom: 0.75em;
+  width: 100%;
+}
+
+.form-item input {
+  background: #fafafa;
+  border: none;
+  border-bottom: 2px solid #e9e9e9;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  height: 50px;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+.form-item input:focus {
+  border-bottom: 2px solid #c0c0c0;
+  outline: none;
+}
+
+.button-panel {
+  margin: 2em 0 0;
+  width: 100%;
+}
+
+.button-panel .button {
+  background: #f16272;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+}
+
+.button:hover {
+  background: #ee3e52;
+}
+
+.button-panel .login-button {
+  background: #5dd7ec;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+}
+
+.login-button:hover {
+  background: #439baa;
+}
+
+.form-footer {
+  font-size: 1em;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.form-footer a {
+  color: #8c8c8c;
+  text-decoration: none;
+  transition: border-color 0.3s;
+}
+
+.form-footer a:hover {
+  border-bottom: 1px dotted #8c8c8c;
 }
 </style>
