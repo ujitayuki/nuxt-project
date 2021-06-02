@@ -21,9 +21,11 @@
                 <a class="nav-link" href="#"><i class="fas fa-heart icon"></i>お気に入り</a>
               </li>
             </ul>
+            <div class="user-button">
             <div class="test">
               <a href="#" class="btn btn-outline-danger" @click="open_register_modal">会員登録</a>
               <a href="#" class="btn btn-outline-info" @click="open_login_modal">ログイン</a>
+            </div>
             </div>
           </div>
         </div>
@@ -128,6 +130,10 @@ export default {
 
 
 <style>
+.container-fluid{
+  width: auto;
+}
+
 .form-wrapper {
   background: #fafafa;
   margin: 3em auto;
