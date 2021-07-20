@@ -282,7 +282,7 @@
 
         <!-- rannking -->
         <div>
-           <h1 class="slider_ttl mt-5">人気商品ランキング</h1>
+           <h1 class="slider_ttl mt-5">人気ワンちゃんランキング</h1>
         <ul class="horizontal_scroll rank">
           <ul class="card-horizontal-list text-center">
             <li>
