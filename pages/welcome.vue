@@ -208,7 +208,7 @@
             </label>
           </div>
           <div class="text-center mt-5">
-            <a href="" class="btn btn--orange serch-button">検索する</a>
+            <a href="/dog-list" class="btn btn--orange serch-button">検索する</a>
           </div>
           <div class="wave">
           </div>
@@ -223,7 +223,7 @@
           <h1 class="slider_ttl">NEWわんちゃん</h1>
           <ul class="card-horizontal-list text-center">
             <li>
-              <a href="/dog-list">
+              <a href="/dog-detail">
                 <img src="~/assets/img/test.jpg">
                 <div>
                   <h3>name</h3>
