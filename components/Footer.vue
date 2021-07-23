@@ -1,5 +1,6 @@
 <template>
   <div>
+    <client-only>
     <div class="footer-bg">
       <div class="container pt-4 pt-md-5">
           <div id="footer-sns" class="row align-items-center border-bottom">
@@ -89,6 +90,7 @@
             </div>
           </div>
       </Modal>
+      </client-only>
   </div>
 </template>
 

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <client-only>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
           <a class="navbar-brand" href="/welcome"><img src="~/assets/img/header.logo.png" alt="ヘッダーロゴ" height="80"></a>
@@ -86,6 +87,7 @@
             </div>
           </div>
       </Modal>
+      </client-only>
   </div>
 </template>
 
