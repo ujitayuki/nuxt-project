@@ -1,5 +1,6 @@
 <template>
   <div>
+    <client-only>
     <Header />
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -466,6 +467,7 @@
         
   <Footer />
   <Copylight />
+  </client-only>
   </div>
 </template>
 
