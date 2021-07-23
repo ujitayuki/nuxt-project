@@ -1,5 +1,6 @@
 <template>
   <div>
+    <client-only>
     <Header />
     <div>
       <h1 class="text-danger text-center mt-5">PET NEWS</h1>
@@ -40,6 +41,7 @@
       
     <Footer />
     <Copylight />
+    </client-only>
   </div>
 </template>
 

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <client-only>
     <Header />
     <h1 class="text-danger text-center mt-5">特定商取引法に基づく表記</h1>
     <div class="container">
@@ -18,6 +19,7 @@
       
     <Footer />
     <Copylight />
+    </client-only>
   </div>
 </template>
 

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <client-only>
     <Header />
     <div class="section-container2">
       <h2 class="text-center text-white pt-5 description-title">「わんちゃん好き」と「愛犬」をつなげるプラットフォーム
@@ -35,6 +36,7 @@
     </div>
     <Footer />
     <Copylight />
+    </client-only>
   </div>
 </template>
 

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <client-only>
     <Header />
       <div>
         <h1 class="text-danger dog-list-title">ボストンテリア一覧</h1>
@@ -174,6 +175,7 @@
       </div>
     <Footer />
     <Copylight />
+    </client-only>
   </div>
 </template>
 
