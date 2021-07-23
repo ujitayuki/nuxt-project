@@ -13,6 +13,15 @@ a:hover {
   background-color: #67b5b7 !important;
 }
 
+/* ヘッダー */
+.navbar-expand-lg {
+  justify-content: center;
+}
+
+.container-fluid {
+  margin: 0;
+}
+
 /* フッター */
 #footer-sns img {
   height: 58px;

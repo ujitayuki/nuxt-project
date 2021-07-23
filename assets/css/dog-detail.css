@@ -14,6 +14,10 @@
   object-fit: cover;
 }
 
+.introduce-wrap {
+  padding: 10px;
+}
+
 .my_name {
   font-weight: bold;
 }
