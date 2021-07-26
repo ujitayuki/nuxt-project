@@ -7,7 +7,7 @@
         <div class="card-group">
           <div class="card">
             <img src="~/assets/img/dog-img/ボストンテリア.png">
-            <a href="#">
+            <a href="/dog-detail">
             <div class="card-body">
               <h5 class="card-title">〇〇ちゃん　♀</h5>
               <p class="card-text h6">女の子｜埼玉県</p>
