@@ -414,6 +414,73 @@
 
         </div>
 
+        <!-- newわんちゃん -->
+        <div>
+          <h2 class="mt-5  text-center description-title">愛護団体</h2>
+          <p class="text-center text-gray mb-5 description-subtitle">
+            <愛護団体の方々へ寄付をしよう>
+          </p>
+          <h1 class="slider_ttl">愛護団体一覧</h1>
+          <ul class="card-horizontal-list text-center">
+            <li>
+              <a href="/dog-detail">
+                <img src="~/assets/img/aigo_1.png">
+                <div>
+                  <h3>name</h3>
+                  <p>dog bread</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="~/assets/img/aigo_2.png">
+                <div>
+                  <h3>name</h3>
+                  <p>dog bread</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="~/assets/img/aigo_3.png">
+                <div>
+                  <h3>name</h3>
+                  <p>dog bread</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="~/assets/img/aigo_4.png">
+                <div>
+                  <h3>name</h3>
+                  <p>dog bread</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="~/assets/img/aigo_1.png">
+                <div>
+                  <h3>name</h3>
+                  <p>dog bread</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="~/assets/img/aigo_2.png">
+                <div>
+                  <h3>name</h3>
+                  <p>dog bread</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <a href="#" class="detail">もっと見る</a>
+        </div>
+
         <!-- スライダー広告 -->
         <div class="sponser">
           <div class="slider1">
