@@ -62,6 +62,13 @@
               <p><a href="#">Forgot password?</a></p> -->
               <p>すでにご登録済みの方は <a href="#">こちら</a></p>
             </div>
+            <div>
+              <p style="font-weight:bold;">各種サービスで登録</p>
+              <a href="#">
+              <img src="~/assets/img/google.login.png" alt="" width="50%" height="100%" style="object-fit: cover;" @click="googleLogin">
+              </a>
+              <br><br><br>
+            </div>
           </div>
       </Modal>
       <Modal v-show="login_modal">
@@ -85,6 +92,11 @@
               <p>新規会員登録がお済みでない方は <a href="#">こちら</a></p>
               <p>パスワードをお忘れの方は <a href="#">こちら</a></p>
             </div>
+            <div>
+              <p style="font-weight:bold;">各種サービスでログイン</p>
+              <img src="~/assets/img/google.login.png" alt="" width="50%" height="100%" style="object-fit: cover;" @click="googleLogin">
+              <br><br><br>
+            </div>
           </div>
       </Modal>
       </client-only>
@@ -93,9 +105,10 @@
 
 <script>
 import Modal from './Modal.vue'
-
+import firebase from '@/plugins/firebase'
 
 export default {
+  name: 'home',
   components: {
     Modal
   },
@@ -124,6 +137,9 @@ export default {
     },
     register () {
       this.$store.dispatch('register', {name: this.name, email: this.email, password: this.password})
+    },
+     googleLogin: function() {
+      firebase.auth().signInWithRedirect(new firebase.auth.GoogleAuthProvider());
     }
   },
 
