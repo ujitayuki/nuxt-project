@@ -77,15 +77,15 @@
                 <span aria-hidden="true">&times;</span>
             </button>
             <h1 class="modal-title">ログイン</h1>
-            <form>
+            <form @submit.prevent>
               <div class="form-item">
-                <input type="email" name="email" required="required" placeholder="メールアドレス"></input>
+                <input v-model="email" type="email" name="email" required="required" placeholder="メールアドレス"></input>
               </div>
               <div class="form-item">
-                <input type="password" name="password" required="required" placeholder="パスワード"></input>
+                <input v-model="password" type="password" name="password" required="required" placeholder="パスワード"></input>
               </div>
               <div class="button-panel">
-                <input type="submit" class="login-button" title="Sign In" value="ログイン"></input>
+                <input type="submit" class="login-button" title="Sign In" value="ログイン" @click="login"></input>
               </div>
             </form>
             <div class="form-footer">
@@ -117,7 +117,9 @@ export default {
     return {
       register_modal: false,
       login_modal: false,
-      class_atached: false
+      class_atached: false,
+      email: '',
+      password: '',
     }
   },
   methods: {
@@ -140,7 +142,10 @@ export default {
     },
      googleLogin: function() {
       firebase.auth().signInWithRedirect(new firebase.auth.GoogleAuthProvider());
-    }
+    },
+    login (email, password) {
+     this.$store.dispatch('login', {email: this.email, password: this.password})
+   },
   },
 
   mounted() {

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/user/Desktop/nuxt-project/pages/about.vue",
+    "chunkName": "pages/about"
+  },
+  {
+    "name": "commercial",
+    "path": "/commercial",
+    "component": "/Users/user/Desktop/nuxt-project/pages/commercial.vue",
+    "chunkName": "pages/commercial"
+  },
+  {
+    "name": "dog-detail",
+    "path": "/dog-detail",
+    "component": "/Users/user/Desktop/nuxt-project/pages/dog-detail.vue",
+    "chunkName": "pages/dog-detail"
+  },
+  {
+    "name": "dog-list",
+    "path": "/dog-list",
+    "component": "/Users/user/Desktop/nuxt-project/pages/dog-list.vue",
+    "chunkName": "pages/dog-list"
+  },
+  {
+    "name": "news",
+    "path": "/news",
+    "component": "/Users/user/Desktop/nuxt-project/pages/news.vue",
+    "chunkName": "pages/news"
+  },
+  {
+    "name": "sample",
+    "path": "/sample",
+    "component": "/Users/user/Desktop/nuxt-project/pages/sample.vue",
+    "chunkName": "pages/sample"
+  },
+  {
+    "name": "welcome",
+    "path": "/welcome",
+    "component": "/Users/user/Desktop/nuxt-project/pages/welcome.vue",
+    "chunkName": "pages/welcome"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/user/Desktop/nuxt-project/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]
