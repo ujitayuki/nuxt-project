@@ -77,6 +77,7 @@
                 <span aria-hidden="true">&times;</span>
             </button>
             <h1 class="modal-title">ログイン</h1>
+            {{ user }}
             <form @submit.prevent>
               <div class="form-item">
                 <input v-model="email" type="email" name="email" required="required" placeholder="メールアドレス"></input>
@@ -112,6 +113,11 @@ export default {
   components: {
     Modal
   },
+  computed: {
+   user () {
+     return this.$store.getters['user']
+   },
+ },
   
   data() {
     return {
