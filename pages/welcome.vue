@@ -152,7 +152,7 @@
           <div class="select-box">
             <label>
               <select name="dog">
-                <option>-</option>
+                <option>犬種を選択する</option>
                 <option>ジャーマンシェパード</option>
                 <option>ブルドッグ</option>
                 <option>プードル</option>

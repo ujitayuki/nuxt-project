@@ -23,15 +23,22 @@ a:hover {
 }
 
 /* フッター */
-#footer-sns img {
-  height: 58px;
-  width: auto;
-  margin-right: 25px;
-  border-radius: 50px;
+.sns-wrap {
+  display: flex;
+  margin-top: 20px;
+  /* justify-content: center; */
 }
+
 #footer-index ul ul {
   padding-left: 0.75rem;
   border-left: 1px solid #6c757d;
+}
+
+.footer-sns img {
+  height: 35px;
+  width: auto;
+  margin-right: 25px;
+  border-radius: 50%;
 }
 
 /* 個人設定 */
@@ -108,9 +115,8 @@ a.btn--orange {
 .btn--orange:hover,
 a.btn--orange:hover {
   color: #fff;
-  background: rgb(228, 152, 205);
+  background: #f3695a;
 }
-
 .section-container {
   position: relative;
   background-image: url(../img/test.png);
@@ -222,93 +228,6 @@ a.btn--orange:hover {
   border-radius: 20px;
 }
 
-/* --------------------------------------------------
-
- レスポンシブ
-
---------------------------------------------------　*/
-
-@media (max-width: 991.98px) {
-  /* md タブレット・スマートフォン向け */
-
-  #nav02 .nav-item {
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #dee2e6;
-    letter-spacing: 0.25rem;
-  }
-}
-
-@media (max-width: 575.98px) {
-  /* xs スマートフォン向け */
-
-  /* フッター */
-  #footer-sns img {
-    height: 29px;
-    margin-right: 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .carousel {
-    height: 180px;
-  }
-
-  .carousel-item img {
-    height: 180px;
-    object-fit: cover;
-  }
-
-  .navbar-toggler {
-    position: relative;
-  }
-
-  .navbar-toggler-icon {
-    position: relative;
-    left: -8px;
-    top: -6px;
-  }
-}
-
-/* 個人設定 */
-
-/* 画面幅が768px以上の場合、横スクロールを解除 */
-@media screen and (min-width: 768px) {
-  .horizontal_scroll {
-    overflow-x: inherit;
-    padding: 0 8px 6px;
-  }
-}
-
-.horizontal_scroll > li {
-  width: 100%;
-  min-width: 140px;
-}
-
-@media screen and (min-width: 768px) {
-  .horizontal_scroll > li {
-    min-width: inherit;
-  }
-}
-
-.horizontal_scroll > li:not(:last-child) {
-  margin-right: 5px;
-}
-
-.horizontal_scroll > li:last-child {
-  padding-right: 5px;
-}
-
-@media screen and (min-width: 768px) {
-  .horizontal_scroll > li:last-child {
-    padding-right: 0;
-  }
-}
-
-.horizontal_scroll img {
-  vertical-align: bottom;
-}
-
 /* タイトル */
 .slider_ttl {
   color: #333;
@@ -381,7 +300,72 @@ a.btn--orange:hover {
   border-right: 1px solid #ccc;
 }
 
-@media screen and (max-width: 460px) {
+/* --------------------------------------------------
+
+ レスポンシブ
+
+--------------------------------------------------　*/
+
+@media (max-width: 991.98px) {
+  /* md タブレット・スマートフォン向け */
+}
+
+@media (max-width: 575.98px) {
+  /* xs スマートフォン向け */
+  /* フッター */
+  /* #footer-sns img {
+    height: 29px;
+    margin-right: 15px;
+  } */
+}
+
+/* 画面幅が768px以上の場合、横スクロールを解除 */
+@media screen and (min-width: 768px) {
+  .horizontal_scroll {
+    overflow-x: inherit;
+    padding: 0 8px 6px;
+  }
+  .horizontal_scroll > li {
+    min-width: inherit;
+  }
+  .horizontal_scroll > li {
+    width: 100%;
+    min-width: 140px;
+  }
+  .horizontal_scroll > li:not(:last-child) {
+    margin-right: 5px;
+  }
+  .horizontal_scroll > li:last-child {
+    padding-right: 5px;
+  }
+  .horizontal_scroll > li:last-child {
+    padding-right: 0;
+  }
+  .horizontal_scroll img {
+    vertical-align: bottom;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel {
+    height: 180px;
+  }
+
+  .carousel-item img {
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .navbar-toggler {
+    position: relative;
+  }
+
+  .navbar-toggler-icon {
+    position: relative;
+    left: -8px;
+    top: -6px;
+  }
+
   .description img {
     width: 100%;
     height: 40px;

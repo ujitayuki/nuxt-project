@@ -1,0 +1,58 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/user/Desktop/nuxt-project/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_a5f1265e"
+  },
+  {
+    "name": "commercial",
+    "path": "/commercial",
+    "component": "/Users/user/Desktop/nuxt-project/pages/commercial.vue",
+    "chunkName": "pages/commercial",
+    "_name": "_19ceef36"
+  },
+  {
+    "name": "dog-detail",
+    "path": "/dog-detail",
+    "component": "/Users/user/Desktop/nuxt-project/pages/dog-detail.vue",
+    "chunkName": "pages/dog-detail",
+    "_name": "_64fbf9ee"
+  },
+  {
+    "name": "dog-list",
+    "path": "/dog-list",
+    "component": "/Users/user/Desktop/nuxt-project/pages/dog-list.vue",
+    "chunkName": "pages/dog-list",
+    "_name": "_5e0c7e0a"
+  },
+  {
+    "name": "news",
+    "path": "/news",
+    "component": "/Users/user/Desktop/nuxt-project/pages/news.vue",
+    "chunkName": "pages/news",
+    "_name": "_31f1213f"
+  },
+  {
+    "name": "sample",
+    "path": "/sample",
+    "component": "/Users/user/Desktop/nuxt-project/pages/sample.vue",
+    "chunkName": "pages/sample",
+    "_name": "_ac6c78d4"
+  },
+  {
+    "name": "welcome",
+    "path": "/welcome",
+    "component": "/Users/user/Desktop/nuxt-project/pages/welcome.vue",
+    "chunkName": "pages/welcome",
+    "_name": "_ee9951b4"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/user/Desktop/nuxt-project/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_668170d4"
+  }
+]
