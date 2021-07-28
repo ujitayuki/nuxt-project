@@ -20,5 +20,7 @@
     "nuxt-fontawesome": "^0.4.0",
     "save": "^2.4.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "firebase-tools": "9.16.0"
+  }
 }

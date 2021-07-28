@@ -53,5 +53,6 @@ export default {
       babelrc: false,
       compact: false
     }
-  }
+  },
+  buildDir: 'nuxt-dist'
 }
