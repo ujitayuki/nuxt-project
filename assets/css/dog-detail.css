@@ -74,4 +74,8 @@ a.btn-radius-solid:hover {
   .dog-detail-wrap {
     width: 100%;
   }
+
+  .btn-radius-solid {
+    font-size: 13px;
+  }
 }

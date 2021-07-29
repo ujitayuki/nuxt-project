@@ -50,8 +50,11 @@
               <div class="like_btn">
                 <i class="fas fa-heart icon"></i>
               </div>
-              <a href="" class="btn btn-radius-solid">お気に入りに追加</a>
+              <a href="" class="btn btn-radius-solid" style="font-weight: bold;">お気に入りに追加</a>
+              <a href="" class="btn btn-radius-solid" style="margin-left:10px; font-weight:bold; color:#ff7d6e;">スポンサーになる</a>
             </div>
+            <br>
+            
             <br><br>
           </div>
           

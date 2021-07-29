@@ -6,37 +6,31 @@
           <!-- .row -->
           <div id="footer-index" class="row pt-4">
             <ul class="col list-unstyled">
-              <li>
-              <li><a href="#">MENU</a></li>
+              <li class="footer-menu"><a href="#">MENU</a></li>
               <ul class="list-unstyled">
                 <li><a href="/about">ぺろドナとは？</a></li>
                 <li><a href="#" @click="open_contact_modal">お問い合わせ</a></li>
                 <li><a href="/news">ペットニュース</a></li>
                 <li><a href="#">ご利用ガイド</a></li>
               </ul>
-              </li>
             </ul>
       
             <ul class="col list-unstyled">
-              <li>
               <li><a href="#">MENU</a></li>
               <ul class="list-unstyled">
                 <li><a href="#">愛犬を掲載する</a></li>
                 <li><a href="#">お気に入り</a></li>
                 <!-- <li><a href="#">SUBMENU</a></li> -->
               </ul>
-              </li>
             </ul>
       
             <ul class="col list-unstyled">
-              <li>
                 <li><a href="#">MENU</a></li>
                 <ul class="list-unstyled">
                   <li><a href="#">利用規約</a></li>
                   <li><a href="/commercial">特定商取引に基ずく表記</a></li>
                   <li><a href="#">プライバシーポリシー</a></li>
                 </ul>
-              </li>
             </ul>
           </div><!-- /.footer-index -->
       
@@ -166,18 +160,6 @@ textarea {
 
 .button:hover {
   background: #ee3e52;
-}
-
-
-@media screen and (max-width: 460px) {
-.list-unstyled li a{
-  font-size: 2px;
-}
-
-.sns-title a {
-  font-size: 2px;
-}
-
 }
 
 

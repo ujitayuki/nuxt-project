@@ -383,12 +383,12 @@ a.btn--orange:hover {
 
   .description-title {
     font-weight: bold;
-    font-size: 13px;
+    font-size: 16px;
     padding-top: -50px;
   }
 
   .description-subtitle {
-    font-size: 5px;
+    font-size: 13px;
   }
 
   .description {
@@ -451,5 +451,9 @@ a.btn--orange:hover {
 
   .serch-button {
     margin-top: -20px;
+  }
+
+  .list-unstyled li a {
+    font-size: 10px;
   }
 }
