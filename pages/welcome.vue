@@ -278,7 +278,7 @@
             </li>
           </ul>
 
-          <a href="#" class="detail">もっと見る</a>
+          <a href="/new-dog-list" class="detail">もっと見る</a>
         </div>
 
         <!-- rannking -->
@@ -379,7 +379,7 @@
           </ul>  
         </ul>
 
-        <a href="#" class="detail">もっと見る</a>
+        <a href="/popular-dog" class="detail">もっと見る</a>
         </div>
 
         <!-- introduce -->
@@ -414,7 +414,7 @@
 
         </div>
 
-        <!-- newわんちゃん -->
+        <!-- 愛護団体 -->
         <div>
           <h2 class="mt-5  text-center description-title">愛護団体</h2>
           <p class="text-center text-gray mb-5 description-subtitle">
@@ -478,7 +478,7 @@
             </li>
           </ul>
 
-          <a href="#" class="detail">もっと見る</a>
+          <a href="/protection-group" class="detail">もっと見る</a>
         </div>
 
         <!-- スライダー広告 -->

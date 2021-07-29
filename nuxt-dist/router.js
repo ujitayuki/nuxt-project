@@ -8,8 +8,10 @@ const _a5f1265e = () => interopDefault(import('../pages/about.vue' /* webpackChu
 const _19ceef36 = () => interopDefault(import('../pages/commercial.vue' /* webpackChunkName: "pages/commercial" */))
 const _64fbf9ee = () => interopDefault(import('../pages/dog-detail.vue' /* webpackChunkName: "pages/dog-detail" */))
 const _5e0c7e0a = () => interopDefault(import('../pages/dog-list.vue' /* webpackChunkName: "pages/dog-list" */))
+const _4ab9d3f0 = () => interopDefault(import('../pages/new-dog-list.vue' /* webpackChunkName: "pages/new-dog-list" */))
 const _31f1213f = () => interopDefault(import('../pages/news.vue' /* webpackChunkName: "pages/news" */))
-const _ac6c78d4 = () => interopDefault(import('../pages/sample.vue' /* webpackChunkName: "pages/sample" */))
+const _de8c89e8 = () => interopDefault(import('../pages/popular-dog.vue' /* webpackChunkName: "pages/popular-dog" */))
+const _5f867af7 = () => interopDefault(import('../pages/protection-group.vue' /* webpackChunkName: "pages/protection-group" */))
 const _ee9951b4 = () => interopDefault(import('../pages/welcome.vue' /* webpackChunkName: "pages/welcome" */))
 const _668170d4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -41,13 +43,21 @@ export const routerOptions = {
     component: _5e0c7e0a,
     name: "dog-list"
   }, {
+    path: "/new-dog-list",
+    component: _4ab9d3f0,
+    name: "new-dog-list"
+  }, {
     path: "/news",
     component: _31f1213f,
     name: "news"
   }, {
-    path: "/sample",
-    component: _ac6c78d4,
-    name: "sample"
+    path: "/popular-dog",
+    component: _de8c89e8,
+    name: "popular-dog"
+  }, {
+    path: "/protection-group",
+    component: _5f867af7,
+    name: "protection-group"
   }, {
     path: "/welcome",
     component: _ee9951b4,
