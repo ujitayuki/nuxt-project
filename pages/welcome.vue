@@ -220,7 +220,7 @@
           <p class="text-center text-gray mb-5 description-subtitle">
             <気になるワンちゃんを見つけよう>
           </p>
-          <h1 class="slider_ttl">NEWわんちゃん</h1>
+          <h1 class="slider_ttl"><span style="color:red;">NEW</span>わんちゃん</h1>
           <ul class="card-horizontal-list text-center">
             <li>
               <a href="/dog-detail">
@@ -283,7 +283,7 @@
 
         <!-- rannking -->
         <div>
-           <h1 class="slider_ttl mt-5">人気ワンちゃんランキング</h1>
+           <h1 class="slider_ttl mt-5"><span style="color: green;">人気</span>わんちゃんランキング</h1>
         <ul class="horizontal_scroll rank">
           <ul class="card-horizontal-list text-center">
             <li>
