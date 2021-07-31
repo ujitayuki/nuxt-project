@@ -18,6 +18,7 @@ import nuxt_plugin_bootstrapvue_1a2d36d8 from 'nuxt_plugin_bootstrapvue_1a2d36d8
 import nuxt_plugin_templatesplugin86302e0a_82eed04c from 'nuxt_plugin_templatesplugin86302e0a_82eed04c' // Source: ./templates.plugin.86302e0a.js (mode: 'all')
 import nuxt_plugin_main_1856e168 from 'nuxt_plugin_main_1856e168' // Source: ../plugins/main.js (mode: 'client')
 import nuxt_plugin_firebase_5cf99106 from 'nuxt_plugin_firebase_5cf99106' // Source: ../plugins/firebase (mode: 'all')
+import nuxt_plugin_vuecarousel_6c010c3d from 'nuxt_plugin_vuecarousel_6c010c3d' // Source: ../plugins/vue-carousel (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -232,6 +233,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_firebase_5cf99106 === 'function') {
     await nuxt_plugin_firebase_5cf99106(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vuecarousel_6c010c3d === 'function') {
+    await nuxt_plugin_vuecarousel_6c010c3d(app.context, inject)
   }
 
   // Lock enablePreview in context

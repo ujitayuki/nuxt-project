@@ -2,7 +2,7 @@
   <div>
     <client-only>
     <Header />
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -27,7 +27,24 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
+      </div> -->
+       <carousel
+          :per-page="1"
+          :autoplay="true"
+          :loop="true"
+          :pagination-padding="5"
+          :autoplay-timeout="3000"
+        >
+        <slide class="carousel-wrap">
+          <img class="carousel-img" src="~/assets/img/slide1.png" alt="スライド1">
+        </slide>
+        <slide class="carousel-wrap">
+          <img class="carousel-img" src="~/assets/img/slide2.png" alt="スライド2">
+        </slide>
+        <slide class="carousel-wrap">
+          <img class="carousel-img" src="~/assets/img/slide3.png" alt="スライド3">
+        </slide>
+      </carousel>
 
       <!-- スライダー広告 -->
       <div class="slider">
@@ -391,7 +408,7 @@
             <li class="border1">
               <h2>お好きなワンちゃんを選ぶ</h2>
               <img src="~/assets/img/description1.png" alt="">
-              <p class="text-right">上記の検索BOXからお好きな犬種をさがします。
+              <p>上記の検索BOXからお好きな犬種をさがします。
               その他にも「NEWわんちゃん」や「人気ランキング」からも探せます。</p>
             </li>
             <li class="border2">
@@ -409,6 +426,7 @@
             </li>
           </ul>
         </div>
+        
         <div class="wave">
         </div>
 
@@ -542,9 +560,27 @@
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
 import Copylight from '~/components/Copylight.vue'
-export default {}
+import Carousel from 'vue-carousel/src/Carousel.vue'
+import Slide from 'vue-carousel/src/Slide.vue'
+export default {
+  components: {
+    Carousel,
+    Slide
+  },
+  data () {
+    return{
+      imageurls: [
+        require('~/assets/img/slide1.png'),
+        require('~/assets/img/slide2.png'),
+        require('~/assets/img/slide3.png'),
+      ],
+    }
+  }
+}
 </script>
 
 <style>
-
+.VueCarousel-pagination[data-v-56de0554] {
+  display: none;
+}
 </style>
