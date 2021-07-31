@@ -13,6 +13,8 @@ const _31f1213f = () => interopDefault(import('../pages/news.vue' /* webpackChun
 const _de8c89e8 = () => interopDefault(import('../pages/popular-dog.vue' /* webpackChunkName: "pages/popular-dog" */))
 const _5f867af7 = () => interopDefault(import('../pages/protection-group.vue' /* webpackChunkName: "pages/protection-group" */))
 const _ee9951b4 = () => interopDefault(import('../pages/welcome.vue' /* webpackChunkName: "pages/welcome" */))
+const _4cc14878 = () => interopDefault(import('../pages/my_page/dog_setting.vue' /* webpackChunkName: "pages/my_page/dog_setting" */))
+const _1c6970fb = () => interopDefault(import('../pages/my_page/mypage_seting.vue' /* webpackChunkName: "pages/my_page/mypage_seting" */))
 const _668170d4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -62,6 +64,14 @@ export const routerOptions = {
     path: "/welcome",
     component: _ee9951b4,
     name: "welcome"
+  }, {
+    path: "/my_page/dog_setting",
+    component: _4cc14878,
+    name: "my_page-dog_setting"
+  }, {
+    path: "/my_page/mypage_seting",
+    component: _1c6970fb,
+    name: "my_page-mypage_seting"
   }, {
     path: "/",
     component: _668170d4,

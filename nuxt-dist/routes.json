@@ -3,70 +3,72 @@
     "name": "about",
     "path": "/about",
     "component": "/Users/user/Desktop/nuxt-project/pages/about.vue",
-    "chunkName": "pages/about",
-    "_name": "_a5f1265e"
+    "chunkName": "pages/about"
   },
   {
     "name": "commercial",
     "path": "/commercial",
     "component": "/Users/user/Desktop/nuxt-project/pages/commercial.vue",
-    "chunkName": "pages/commercial",
-    "_name": "_19ceef36"
+    "chunkName": "pages/commercial"
   },
   {
     "name": "dog-detail",
     "path": "/dog-detail",
     "component": "/Users/user/Desktop/nuxt-project/pages/dog-detail.vue",
-    "chunkName": "pages/dog-detail",
-    "_name": "_64fbf9ee"
+    "chunkName": "pages/dog-detail"
   },
   {
     "name": "dog-list",
     "path": "/dog-list",
     "component": "/Users/user/Desktop/nuxt-project/pages/dog-list.vue",
-    "chunkName": "pages/dog-list",
-    "_name": "_5e0c7e0a"
+    "chunkName": "pages/dog-list"
   },
   {
     "name": "new-dog-list",
     "path": "/new-dog-list",
     "component": "/Users/user/Desktop/nuxt-project/pages/new-dog-list.vue",
-    "chunkName": "pages/new-dog-list",
-    "_name": "_4ab9d3f0"
+    "chunkName": "pages/new-dog-list"
   },
   {
     "name": "news",
     "path": "/news",
     "component": "/Users/user/Desktop/nuxt-project/pages/news.vue",
-    "chunkName": "pages/news",
-    "_name": "_31f1213f"
+    "chunkName": "pages/news"
   },
   {
     "name": "popular-dog",
     "path": "/popular-dog",
     "component": "/Users/user/Desktop/nuxt-project/pages/popular-dog.vue",
-    "chunkName": "pages/popular-dog",
-    "_name": "_de8c89e8"
+    "chunkName": "pages/popular-dog"
   },
   {
     "name": "protection-group",
     "path": "/protection-group",
     "component": "/Users/user/Desktop/nuxt-project/pages/protection-group.vue",
-    "chunkName": "pages/protection-group",
-    "_name": "_5f867af7"
+    "chunkName": "pages/protection-group"
   },
   {
     "name": "welcome",
     "path": "/welcome",
     "component": "/Users/user/Desktop/nuxt-project/pages/welcome.vue",
-    "chunkName": "pages/welcome",
-    "_name": "_ee9951b4"
+    "chunkName": "pages/welcome"
+  },
+  {
+    "name": "my_page-dog_setting",
+    "path": "/my_page/dog_setting",
+    "component": "/Users/user/Desktop/nuxt-project/pages/my_page/dog_setting.vue",
+    "chunkName": "pages/my_page/dog_setting"
+  },
+  {
+    "name": "my_page-mypage_seting",
+    "path": "/my_page/mypage_seting",
+    "component": "/Users/user/Desktop/nuxt-project/pages/my_page/mypage_seting.vue",
+    "chunkName": "pages/my_page/mypage_seting"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/user/Desktop/nuxt-project/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_668170d4"
+    "chunkName": "pages/index"
   }
 ]
