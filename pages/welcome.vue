@@ -166,66 +166,68 @@
           <p class="text-center text-white description-subtitle">
             <ワンちゃんの種類ごとに検索できます>
           </p>
-          <div class="select-box">
-            <label>
-              <select name="dog">
-                <option>犬種を選択する</option>
-                <option>ジャーマンシェパード</option>
-                <option>ブルドッグ</option>
-                <option>プードル</option>
-                <option>ラブラドールレトリバー</option>
-                <option>ゴールデンレトリバー</option>
-                <option>チワワ</option>
-                <option>ダックスフンド</option>
-                <option>シベリアンハスキー</option>
-                <option>ロットワイラー</option>
-                <option>フレンチブルドッグ</option>
-                <option>イングリッシュ・グレイハウンド</option>
-                <option>グレート・デン</option>
-                <option>ポメラニアン</option>
-                <option>シーズー</option>
-                <option>マルチーズ</option>
-                <option>キャバリア</option>
-                <option>ドーベルマン</option>
-                <option>バーニーズ</option>
-                <option>コーギー</option>
-                <option>ボストンテリア</option>
-                <option>ボーダーコリー</option>
-                <option>ニューファンドランド</option>
-                <option>セントバーナード</option>
-                <option>バセット・ハウンド</option>
-                <option>アラスカン・マラミュート</option>
-                <option>チャウチャウ</option>
-                <option>ビション・フリーゼ</option>
-                <option>スタッフォードシャー・ブル・テリア</option>
-                <option>チャイニーズ・クレステッド・ドッグ</option>
-                <option>ジャック・ラッセル</option>
-                <option>ブル・テリア</option>
-                <option>アイリッシュ・セッター</option>
-                <option>イングリッシュ・スプリンガー・スパニエル</option>
-                <option>イングリッシュ・コッカー・スパニエル</option>
-                <option>バセンジー</option>
-                <option>アメリカン・スタッフォード・シャー</option>
-                <option>アイリッシュ・ウルフハウンド</option>
-                <option>アフガン・ハウンド</option>
-                <option>ジャーマン・ショートヘアード・ポインター</option>
-                <option>エアデール・テリア</option>
-                <option>イタリアン・グレイハウンド</option>
-                <option>イングリッシュ・ポインター</option>
-                <option>ピット・ブル</option>
-                <option>イタリアン・コルソ・ドッグ</option>
-                <option>サモエド</option>
-                <option>Sarabi dog</option>
-                <option>トイ・プードル</option>
-                <option>ピンシャー</option>
-                <option>ラブラドゥードル</option>
-                <option>カンガール・ドッグ</option>
-                <option>その他</option>
-              </select>
-            </label>
-          </div>
-          <div class="text-center mt-5">
-            <a href="/dog-list" class="btn btn--orange serch-button">検索する</a>
+          <div class="section-container-inner">
+            <div class="select-box">
+              <label>
+                <select name="dog">
+                  <option>犬種を選択する</option>
+                  <option>ジャーマンシェパード</option>
+                  <option>ブルドッグ</option>
+                  <option>プードル</option>
+                  <option>ラブラドールレトリバー</option>
+                  <option>ゴールデンレトリバー</option>
+                  <option>チワワ</option>
+                  <option>ダックスフンド</option>
+                  <option>シベリアンハスキー</option>
+                  <option>ロットワイラー</option>
+                  <option>フレンチブルドッグ</option>
+                  <option>イングリッシュ・グレイハウンド</option>
+                  <option>グレート・デン</option>
+                  <option>ポメラニアン</option>
+                  <option>シーズー</option>
+                  <option>マルチーズ</option>
+                  <option>キャバリア</option>
+                  <option>ドーベルマン</option>
+                  <option>バーニーズ</option>
+                  <option>コーギー</option>
+                  <option>ボストンテリア</option>
+                  <option>ボーダーコリー</option>
+                  <option>ニューファンドランド</option>
+                  <option>セントバーナード</option>
+                  <option>バセット・ハウンド</option>
+                  <option>アラスカン・マラミュート</option>
+                  <option>チャウチャウ</option>
+                  <option>ビション・フリーゼ</option>
+                  <option>スタッフォードシャー・ブル・テリア</option>
+                  <option>チャイニーズ・クレステッド・ドッグ</option>
+                  <option>ジャック・ラッセル</option>
+                  <option>ブル・テリア</option>
+                  <option>アイリッシュ・セッター</option>
+                  <option>イングリッシュ・スプリンガー・スパニエル</option>
+                  <option>イングリッシュ・コッカー・スパニエル</option>
+                  <option>バセンジー</option>
+                  <option>アメリカン・スタッフォード・シャー</option>
+                  <option>アイリッシュ・ウルフハウンド</option>
+                  <option>アフガン・ハウンド</option>
+                  <option>ジャーマン・ショートヘアード・ポインター</option>
+                  <option>エアデール・テリア</option>
+                  <option>イタリアン・グレイハウンド</option>
+                  <option>イングリッシュ・ポインター</option>
+                  <option>ピット・ブル</option>
+                  <option>イタリアン・コルソ・ドッグ</option>
+                  <option>サモエド</option>
+                  <option>Sarabi dog</option>
+                  <option>トイ・プードル</option>
+                  <option>ピンシャー</option>
+                  <option>ラブラドゥードル</option>
+                  <option>カンガール・ドッグ</option>
+                  <option>その他</option>
+                </select>
+              </label>
+            </div>
+            <div class="text-center mt-5">
+              <a href="/dog-list" class="btn btn--orange serch-button">検索する</a>
+            </div>
           </div>
           <div class="wave">
           </div>
@@ -402,34 +404,34 @@
         <!-- introduce -->
         <div class="section-container2 mt-5">
           <h2 class="text-center text-white pt-5 description-title">「わんちゃん好き」と「愛犬」をつなげるプラットフォーム
-        </h2>
-        <div class="mt-5 text-center">
-          <ul class="description">
-            <li class="border1">
-              <h2>お好きなワンちゃんを選ぶ</h2>
-              <img src="~/assets/img/description1.png" alt="">
-              <p>上記の検索BOXからお好きな犬種をさがします。
-              その他にも「NEWわんちゃん」や「人気ランキング」からも探せます。</p>
-            </li>
-            <li class="border2">
-              <h2>愛犬を登録する<br></h2>
-              <img src="~/assets/img/description2.png" alt="">
-              <p>ご自身の愛犬も「愛犬を掲載する」から登録してみよう。
-              わんちゃん好きの方がいっぱいです。</p>
-            </li>
-            <li>
-              <h2>お互いのスポンサーになる</h2>
-              <img src="~/assets/img/description3.png" alt="">
-              <p>お互いにスポンサーになろう。
-              お好きなわんちゃんを探して、お気に入りの子のスポンサーとして寄付をしよう。
-              また、ご自身の愛犬を登録して、たくさんの方にスポンサーになってもらおう。</p>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="wave">
-        </div>
-
+          </h2>
+          <div class="section-container-inner2">
+            <div class="mt-5 text-center">
+              <ul class="description">
+                <li class="border1">
+                  <h2>お好きなワンちゃんを選ぶ</h2>
+                  <img src="~/assets/img/description1.png" alt="">
+                  <p>上記の検索BOXからお好きな犬種をさがします。
+                  その他にも「NEWわんちゃん」や「人気ランキング」からも探せます。</p>
+                </li>
+                <li class="border2">
+                  <h2>愛犬を登録する<br></h2>
+                  <img src="~/assets/img/description2.png" alt="">
+                  <p>ご自身の愛犬も「愛犬を掲載する」から登録してみよう。
+                  わんちゃん好きの方がいっぱいです。</p>
+                </li>
+                <li>
+                  <h2>お互いのスポンサーになる</h2>
+                  <img src="~/assets/img/description3.png" alt="">
+                  <p>お互いにスポンサーになろう。
+                  お好きなわんちゃんを探して、お気に入りの子のスポンサーとして寄付をしよう。
+                  また、ご自身の愛犬を登録して、たくさんの方にスポンサーになってもらおう。</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="wave">
+          </div>
         </div>
 
         <!-- 愛護団体 -->
@@ -580,7 +582,5 @@ export default {
 </script>
 
 <style>
-.VueCarousel-pagination[data-v-56de0554] {
-  display: none;
-}
+
 </style>
