@@ -3,7 +3,7 @@
     <client-only>
     <Header />
     <div>
-      <h1 class="text-danger text-center mt-5">PET NEWS</h1>
+      <h1 class="text-danger text-center mt-5"><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>PET NEWS</h1>
     </div>
     <div class="mt-5"> 
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

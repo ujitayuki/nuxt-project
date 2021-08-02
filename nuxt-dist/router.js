@@ -14,7 +14,7 @@ const _de8c89e8 = () => interopDefault(import('../pages/popular-dog.vue' /* webp
 const _5f867af7 = () => interopDefault(import('../pages/protection-group.vue' /* webpackChunkName: "pages/protection-group" */))
 const _ee9951b4 = () => interopDefault(import('../pages/welcome.vue' /* webpackChunkName: "pages/welcome" */))
 const _4cc14878 = () => interopDefault(import('../pages/my_page/dog_setting.vue' /* webpackChunkName: "pages/my_page/dog_setting" */))
-const _1c6970fb = () => interopDefault(import('../pages/my_page/mypage_seting.vue' /* webpackChunkName: "pages/my_page/mypage_seting" */))
+const _243231b6 = () => interopDefault(import('../pages/my_page/mypage_setting.vue' /* webpackChunkName: "pages/my_page/mypage_setting" */))
 const _668170d4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -69,9 +69,9 @@ export const routerOptions = {
     component: _4cc14878,
     name: "my_page-dog_setting"
   }, {
-    path: "/my_page/mypage_seting",
-    component: _1c6970fb,
-    name: "my_page-mypage_seting"
+    path: "/my_page/mypage_setting",
+    component: _243231b6,
+    name: "my_page-mypage_setting"
   }, {
     path: "/",
     component: _668170d4,

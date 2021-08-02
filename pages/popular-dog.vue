@@ -3,7 +3,7 @@
     <client-only>
     <Header />
       <div>
-        <h1 class="text-danger dog-list-title">人気わんちゃん一覧</h1>
+        <h1 class="dog-list-title"><i class="fas fa-paw icon" style="color:#ff7d6e;"></i><span style="color:green;">人気</span>わんちゃん一覧</h1>
         <div class="card-group">
           <div class="card">
             <img src="~/assets/img/dog-img/ボストンテリア.png">

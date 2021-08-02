@@ -3,7 +3,7 @@
     <client-only>
     <Header />
       <div class="dog-detail-wrap">
-        <h1 class="text-danger dog-list-title">キャンチョメ</h1>
+        <h1 class="dog-list-title"><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>キャンチョメ</h1>
         <div class="main-img">
           <img src="~/assets/img/dog-img/ボストンテリア.png">
         </div>

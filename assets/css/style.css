@@ -390,6 +390,7 @@ a.btn--orange:hover {
   .description h2 {
     font-size: 13px;
     font-weight: bold;
+    height: 40px;
     margin-top: -20px;
   }
 
