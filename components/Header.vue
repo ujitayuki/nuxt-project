@@ -19,7 +19,7 @@
                 <a class="nav-link" aria-current="page" href="/my_page/dog_setting"><i class="fas fa-paw icon"></i>愛犬を掲載する</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-heart icon"></i>お気に入り</a>
+                <a class="nav-link" href="/favorite"><i class="fas fa-heart icon"></i>お気に入り</a>
               </li>
             </ul>
             <div class="user-button">

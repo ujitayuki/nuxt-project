@@ -28,6 +28,13 @@
     "_name": "_5e0c7e0a"
   },
   {
+    "name": "favorite",
+    "path": "/favorite",
+    "component": "/Users/user/Desktop/nuxt-project/pages/favorite.vue",
+    "chunkName": "pages/favorite",
+    "_name": "_9413ecf0"
+  },
+  {
     "name": "new-dog-list",
     "path": "/new-dog-list",
     "component": "/Users/user/Desktop/nuxt-project/pages/new-dog-list.vue",

@@ -1,0 +1,12 @@
+.mypage-wrap {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .mypage-wrap {
+    width: 100%;
+  }
+}

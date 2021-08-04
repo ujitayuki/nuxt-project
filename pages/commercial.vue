@@ -2,7 +2,7 @@
   <div>
     <client-only>
     <Header />
-    <h1 class="text-danger text-center mt-5">特定商取引法に基づく表記</h1>
+    <h1 class="dog-list-title"><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>特定商取引法に基づく表記</h1>
     <div class="container">
       <h2 class="mt-5">WEBサービス提供者</h2>
       <p>PERRO DONAR株式会社</p>

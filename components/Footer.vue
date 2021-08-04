@@ -18,8 +18,8 @@
             <ul class="col list-unstyled">
               <li><a href="#">MENU</a></li>
               <ul class="list-unstyled">
-                <li><a href="#">愛犬を掲載する</a></li>
-                <li><a href="#">お気に入り</a></li>
+                <li><a href="/my_page/dog_setting">愛犬を掲載する</a></li>
+                <li><a href="/favorite">お気に入り</a></li>
                 <!-- <li><a href="#">SUBMENU</a></li> -->
               </ul>
             </ul>
