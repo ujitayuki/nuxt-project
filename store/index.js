@@ -2,44 +2,53 @@ import firebase from '~/plugins/firebase'
 
 export const state = () => ({
  user: {
-   uid: '',
-   email: '',
-　　// ログイン状態の真偽値を追加
-   login: false,
+  uid: '',
+  email: '',
+  login: false,
  },
 })
 
 export const getters = {
  user: state => {
-   return state.user
+  return state.user
  }
 }
 
 export const actions = {
- login({ commit }, payload) {
-   firebase.auth().signInWithEmailAndPassword(payload.email, payload.password)
-     .then(user => {
-         console.log('成功！')
-         firebase.auth().onAuthStateChanged(function (user) {
-           if (user) {
-             commit('getData', { uid: user.uid, email: user.email })
-             // ユーザー情報の取得と同時にcommitで真偽値の切り替え
-             commit('switchLogin')
-           }
-         })
-       }).catch((error) => {
-         alert(error)
-       })
+ login({ dispatch }, payload) {
+  firebase.auth().signInWithEmailAndPassword(payload.email, payload.password)
+    .then(user => {
+        console.log('成功！')
+        dispatch('checkLogin')
+      }).catch((error) => {
+        alert(error)
+      })
  },
+ checkLogin ({ commit }) {
+  firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+      commit('getData', { uid: user.uid, email: user.email })
+      commit('switchLogin')
+    }
+  })
+ },
+ register ({ dispatch, commit }, payload) {
+   firebase.auth().createUserWithEmailAndPassword(payload.email, payload.password)
+   .then(user => {
+     console.log(user)
+     dispatch('checkLogin')
+   }).catch(function (error) {
+     console.log({'code':error.code, 'message':error.message})
+   })
+  },
 }
 
 export const mutations = {
  getData (state, payload) {
-   state.user.uid = payload.uid
-   state.user.email = payload.email
+  state.user.uid = payload.uid
+  state.user.email = payload.email
  },
- // 真偽値を切り替えるmutationsを追加
  switchLogin (state) {
-   state.user.login = true
+  state.user.login = true
  },
 }

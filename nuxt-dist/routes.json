@@ -63,6 +63,13 @@
     "_name": "_5f867af7"
   },
   {
+    "name": "register",
+    "path": "/register",
+    "component": "/Users/user/Desktop/nuxt-project/pages/register.vue",
+    "chunkName": "pages/register",
+    "_name": "_30d8930f"
+  },
+  {
     "name": "welcome",
     "path": "/welcome",
     "component": "/Users/user/Desktop/nuxt-project/pages/welcome.vue",

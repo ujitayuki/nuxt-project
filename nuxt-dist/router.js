@@ -13,6 +13,7 @@ const _4ab9d3f0 = () => interopDefault(import('../pages/new-dog-list.vue' /* web
 const _31f1213f = () => interopDefault(import('../pages/news.vue' /* webpackChunkName: "pages/news" */))
 const _de8c89e8 = () => interopDefault(import('../pages/popular-dog.vue' /* webpackChunkName: "pages/popular-dog" */))
 const _5f867af7 = () => interopDefault(import('../pages/protection-group.vue' /* webpackChunkName: "pages/protection-group" */))
+const _30d8930f = () => interopDefault(import('../pages/register.vue' /* webpackChunkName: "pages/register" */))
 const _ee9951b4 = () => interopDefault(import('../pages/welcome.vue' /* webpackChunkName: "pages/welcome" */))
 const _4cc14878 = () => interopDefault(import('../pages/my_page/dog_setting.vue' /* webpackChunkName: "pages/my_page/dog_setting" */))
 const _243231b6 = () => interopDefault(import('../pages/my_page/mypage_setting.vue' /* webpackChunkName: "pages/my_page/mypage_setting" */))
@@ -65,6 +66,10 @@ export const routerOptions = {
     path: "/protection-group",
     component: _5f867af7,
     name: "protection-group"
+  }, {
+    path: "/register",
+    component: _30d8930f,
+    name: "register"
   }, {
     path: "/welcome",
     component: _ee9951b4,
