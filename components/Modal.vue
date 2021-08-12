@@ -61,7 +61,12 @@ export default {}
   opacity: 0;
 }
 
+@media screen and (max-width: 480px) {
+.modal__content{
+  width: 100%;
+}
 
+}
 
 
 </style>

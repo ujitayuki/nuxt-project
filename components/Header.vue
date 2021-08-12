@@ -275,6 +275,20 @@ form {
   border-bottom: 1px dotted #8c8c8c;
 }
 
+.close span{
+  padding:10px;
+}
+
+@media screen and (max-width: 480px) {
+.form-wrapper{
+  width: 100%;
+}
+
+.form-footer{
+  font-size:10px;
+}
+}
+
 
 @media screen and (max-width: 1024px) {
  .head-bar {

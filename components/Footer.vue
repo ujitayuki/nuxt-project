@@ -125,7 +125,7 @@ h1 {
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #ff7d6e;
+  border:1px solid #ff7d6e;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
