@@ -35,26 +35,27 @@
         <h1>わんちゃん好きと愛犬をつなぐプラットフォーム！まずは無料の会員登録から</h1>
       </nav>  
       <Modal v-show="register_modal">
+        <div class="page">
           <div class="form-wrapper">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="close_register_modal">
                 <span aria-hidden="true">&times;</span>
             </button>
             <h1 class="modal-title">ユーザー登録</h1>
-            <form>
+            <form @submit.prevent>
               <div class="form-item">
-                <input type="name" name="name" required="required" placeholder="お名前"></input>
+                <input type="name" name="name" required="required" placeholder="ユーザー名" v-model="name">
               </div>
               <div class="form-item">
-                <input type="email" name="email" required="required" placeholder="メールアドレス"></input>
+                <input type="email" name="email" required="required" placeholder="メールアドレス" v-model="email">
               </div>
               <div class="form-item">
-                <input type="password" name="password" required="required" placeholder="パスワード"></input>
+                <input type="password" name="password" required="required" placeholder="パスワード" v-model="password">
               </div>
               <div class="form-item">
-                <input type="password" name="password" required="required" placeholder="パスワード(確認)"></input>
+                <input type="password" name="password" required="required" placeholder="パスワード(確認)">
               </div>
               <div class="button-panel">
-                <input type="submit" class="button" title="Sign In" value="登録"></input>
+                <input type="submit" class="button" title="Sign In" value="登録" @click="register">
               </div>
             </form>
             <div class="form-footer">
@@ -70,6 +71,7 @@
               <br><br><br>
             </div>
           </div>
+        </div>  
       </Modal>
       <Modal v-show="login_modal">
           <div class="form-wrapper">
@@ -80,13 +82,13 @@
             {{ user }}
             <form @submit.prevent>
               <div class="form-item">
-                <input v-model="email" type="email" name="email" required="required" placeholder="メールアドレス"></input>
+                <input v-model="email" type="email" name="email" required="required" placeholder="メールアドレス">
               </div>
               <div class="form-item">
-                <input v-model="password" type="password" name="password" required="required" placeholder="パスワード"></input>
+                <input v-model="password" type="password" name="password" required="required" placeholder="パスワード">
               </div>
               <div class="button-panel">
-                <input type="submit" class="login-button" title="Sign In" value="ログイン" @click="login"></input>
+                <input type="submit" class="login-button" title="Sign In" value="ログイン" @click="login">
               </div>
             </form>
             <div class="form-footer">
@@ -107,27 +109,37 @@
 <script>
 import Modal from './Modal.vue'
 import firebase from '@/plugins/firebase'
+import 'firebase/firestore'
 
 export default {
   name: 'home',
   components: {
     Modal
   },
-  computed: {
-   user () {
-     return this.$store.getters['user']
-   },
- },
   
   data() {
     return {
+    //   user: {
+    //    name: "",
+    //    email: "",
+    //    password: ""
+    //  },
       register_modal: false,
       login_modal: false,
       class_atached: false,
+      name: '',
       email: '',
       password: '',
+      isActive: false 
     }
   },
+
+  computed: {
+    user () {
+      return this.$store.getters['user']
+    }
+  },
+
   methods: {
     open_login_modal() {
       this.login_modal = true
@@ -146,12 +158,27 @@ export default {
     register () {
       this.$store.dispatch('register', {name: this.name, email: this.email, password: this.password})
     },
+    login (email, password) {
+     this.$store.dispatch('login', {email: this.email, password: this.password})
+    },
      googleLogin: function() {
       firebase.auth().signInWithRedirect(new firebase.auth.GoogleAuthProvider());
     },
-    login (email, password) {
-     this.$store.dispatch('login', {email: this.email, password: this.password})
-   },
+
+  //   register () {
+  //    const db = firebase.firestore()
+  //    let dbUsers = db.collection('users')
+  //    dbUsers
+  //      .add({
+  //        name: this.user.name,
+  //        email: this.user.email,
+  //        password: this.user.password
+  //      })
+  //      .then(ref => {
+  //        console.log('Add ID: ', ref.id)
+  //      })
+  //  },
+    
   },
 
   mounted() {
@@ -159,12 +186,9 @@ export default {
       $(".menu-btn").click(function(){
         $(".sp-menu").slideToggle(200);
       });
-      // $(".sp-menu li a").click(function(){
-      //   $(".sp-menu").css({display:"none"});
-      // });
     });
-  },
-  
+
+  } 
 }
 </script>
 
