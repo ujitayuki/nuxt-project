@@ -44,7 +44,7 @@ export default {}
 
   .modal__content{
     height: 100%;
-    padding: 30px;
+    padding: 10px;
     text-align: center;
     overflow: scroll;
   }

@@ -11,32 +11,32 @@
           <ul class="card-horizontal-list text-center">
               <li>
                 <a href="/dog-detail">
-                  <img src="~/assets/img/test.jpg">
+                  <img src="~/assets/img/dog-img/ボストンテリア.png">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="~/assets/img/test6.jpg">
+                  <img src="~/assets/img/dog-img/ボストンテリア.png">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="~/assets/img/test3.jpg">
+                  <img src="~/assets/img/dog-img/ボストンテリア.png">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="~/assets/img/test7.jpg">
+                  <img src="~/assets/img/dog-img/ボストンテリア.png">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="~/assets/img/test4.jpg">
+                  <img src="~/assets/img/dog-img/ボストンテリア.png">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="~/assets/img/test5.jpg">
+                  <img src="~/assets/img/dog-img/ボストンテリア.png">
                 </a>
               </li>
             </ul>
@@ -44,8 +44,17 @@
 
         <div class="introduce-wrap">
           <div class="my_name">
-            <p>名前：キャンチョメ ♀</p>
-            <p>年齢：6歳</p>
+            <table>
+              <tr>
+                <th>名前</th>
+                <td>キャンチョメ ♀</td>
+              </tr>
+              <tr>
+                <th>年齢</th>
+                <td>6歳</td>
+              </tr>
+            </table>
+            <br><br>
             <div class="like">
               <div class="like_btn">
                 <i class="fas fa-heart icon"></i>
@@ -54,7 +63,6 @@
               <a href="" class="btn btn-radius-solid" style="margin-left:10px; font-weight:bold; color:#ff7d6e;">スポンサーになる</a>
             </div>
             <br>
-            
             <br><br>
           </div>
           
@@ -92,12 +100,14 @@
           <div role="tabpanel" v-show="currentTab === 1">
             <div class="introduce">
               <h2>近況報告</h2>
+              <p>開発中</p>
             </div>
           </div>
 
           <div role="tabpanel" v-show="currentTab === 2">
             <div class="introduce">
               <h2>チャット</h2>
+              <p>開発中</p>
             </div>
           </div>
 

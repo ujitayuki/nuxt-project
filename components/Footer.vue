@@ -20,6 +20,9 @@
               <ul class="list-unstyled">
                 <li><a href="/my_page/dog_setting">愛犬を掲載する</a></li>
                 <li><a href="/favorite">お気に入り</a></li>
+                <li><a href="/sponser/">スポンサー</a></li>
+                <li><a href="/my_page/mypage_setting/">プロフィール</a></li>
+                <li><a href="/my_page/home_list/">MY DOG一覧</a></li>
                 <!-- <li><a href="#">SUBMENU</a></li> -->
               </ul>
             </ul>
@@ -112,7 +115,7 @@ export default {
 <style>
 h1 {
   text-align: center;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bold;
   padding: 1em 0;
 }

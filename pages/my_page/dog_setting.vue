@@ -4,52 +4,16 @@
     <Header />
       <div class="dog-setting-wrap">
         <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>愛犬を掲載する</h1>
-        <div class="main-img">
-          <img src="">
-        </div>
-        <div>
-          <ul class="card-horizontal-list text-center">
-              <li>
-                <a href="/dog-detail">
-                  <img src="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="">
-                </a>
-              </li>
-            </ul>
-        </div>
 
         <div class="introduce-wrap">
+          <div>
             <div class="form-group">
               <p>わんちゃんのお名前</p>
-              <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="ぽち" value="">
+              <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="ポチ" value="">
             </div>
             <div class="form-group">
               <p>年齢</p>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="4才" value="">
+              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="2才" value="">
             </div>
             <div class="form-group">
               <p>性別</p>
@@ -63,17 +27,22 @@
               <input type="text" id="dog_breed-field" name="dog_breed" class="form-control border-input" placeholder="ボストンテリア" value="">
             </div>
             <div class="form-group">
-              <p>公開・非公開</p>
+              <p>画像</p>
+              <input type="file" id="dog_pic" name="dog_pic" value="">
+            </div>
+          </div>
+          <br>
+          <div>
+            <div class="form-group">
+              <!-- <p>公開・非公開</p> -->
               <p>
               <input type="radio" name="sex" value="1" checked="checked">公開
               <input type="radio" name="sex" value="2">非公開
               </p>
             </div>
+          </div>
 
-            	
             
-            
-            <br>
             <br><br>
           
 
@@ -107,7 +76,9 @@
           </div>
 
           <div class="mt-5">
+            <a href="/my_page/home_list/">
             <button type="button" class="btn btn-outline-dark">保存</button>
+            </a>
             <a href="/welcome">
             <button type="button" class="btn btn-outline-danger">キャンセル</button>
             </a>

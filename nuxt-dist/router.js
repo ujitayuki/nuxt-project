@@ -14,9 +14,12 @@ const _31f1213f = () => interopDefault(import('../pages/news.vue' /* webpackChun
 const _de8c89e8 = () => interopDefault(import('../pages/popular-dog.vue' /* webpackChunkName: "pages/popular-dog" */))
 const _5f867af7 = () => interopDefault(import('../pages/protection-group.vue' /* webpackChunkName: "pages/protection-group" */))
 const _30d8930f = () => interopDefault(import('../pages/register.vue' /* webpackChunkName: "pages/register" */))
+const _a32806b0 = () => interopDefault(import('../pages/sponser.vue' /* webpackChunkName: "pages/sponser" */))
 const _ee9951b4 = () => interopDefault(import('../pages/welcome.vue' /* webpackChunkName: "pages/welcome" */))
 const _4cc14878 = () => interopDefault(import('../pages/my_page/dog_setting.vue' /* webpackChunkName: "pages/my_page/dog_setting" */))
+const _60e35e96 = () => interopDefault(import('../pages/my_page/home_list.vue' /* webpackChunkName: "pages/my_page/home_list" */))
 const _243231b6 = () => interopDefault(import('../pages/my_page/mypage_setting.vue' /* webpackChunkName: "pages/my_page/mypage_setting" */))
+const _4274757e = () => interopDefault(import('../pages/payment/payment.vue' /* webpackChunkName: "pages/payment/payment" */))
 const _668170d4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -71,6 +74,10 @@ export const routerOptions = {
     component: _30d8930f,
     name: "register"
   }, {
+    path: "/sponser",
+    component: _a32806b0,
+    name: "sponser"
+  }, {
     path: "/welcome",
     component: _ee9951b4,
     name: "welcome"
@@ -79,9 +86,17 @@ export const routerOptions = {
     component: _4cc14878,
     name: "my_page-dog_setting"
   }, {
+    path: "/my_page/home_list",
+    component: _60e35e96,
+    name: "my_page-home_list"
+  }, {
     path: "/my_page/mypage_setting",
     component: _243231b6,
     name: "my_page-mypage_setting"
+  }, {
+    path: "/payment/payment",
+    component: _4274757e,
+    name: "payment-payment"
   }, {
     path: "/",
     component: _668170d4,

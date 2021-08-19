@@ -213,9 +213,9 @@ h1 {
   padding: 1em 0;
 }
 
-form {
+/* form {
   padding: 0 1.5em;
-}
+} */
 
 .form-item {
   margin-bottom: 0.75em;

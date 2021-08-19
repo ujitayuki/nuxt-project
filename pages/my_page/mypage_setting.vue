@@ -9,7 +9,7 @@
     <div class="mypage-wrap">
         <div class="form-group">
           <p>ユーザー名</p>
-          <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="ぽち" value="">
+          <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="ujita yuki" value="">
         </div>
         <div class="form-group">
           <p>メールアドレス</p>
@@ -17,7 +17,7 @@
         </div>
         <div class="form-group">
           <p>郵便番号(ハイフンなし半角英数)</p>
-          <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="123-4567" value="">
+          <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="1234567" value="">
         </div>
         <div class="form-group">
           <p>住所</p>
@@ -47,7 +47,9 @@
         <br>
       
       <div class="mt-5">
+        <a href="/welcome">
         <button type="button" class="btn btn-outline-dark">保存</button>
+        </a>
         <a href="/welcome">
         <button type="button" class="btn btn-outline-danger">キャンセル</button>
         </a>
