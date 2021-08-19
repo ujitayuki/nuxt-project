@@ -4,7 +4,6 @@
     <Header />
     <h1 class="dog-list-title"><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>特定商取引法に基づく表記</h1>
     <div class="container">
-      <h2 class="mt-5"></h2>
       <table>
         <tr>
           <th>WEBサービス提供者</th>

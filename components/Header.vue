@@ -300,7 +300,7 @@ h1 {
 }
 
 .close span{
-  padding:10px;
+  padding-top:10px;
 }
 
 @media screen and (max-width: 480px) {
