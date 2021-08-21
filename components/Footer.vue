@@ -48,7 +48,7 @@
                     alt="Official Facebook Page"></a>
               </div>
               <div class="footer-sns">
-                <a href="#" target="_blank" rel="nofollow" class="d-flex align-items-center"><img
+                <a href="https://twitter.com/Perro_Donar" target="_blank" rel="nofollow" class="d-flex align-items-center"><img
                     src="~/assets/img/titter.png" alt="Official Twitter"></a>
               </div>
             </div>

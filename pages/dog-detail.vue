@@ -73,13 +73,13 @@
                 <a class="nav-link" style="cursor: pointer;" data-toggle="tab" role="tab" @click="currentTab = 0">自己紹介</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" style="cursor: pointer;" data-toggle="tab" role="tab" @click="currentTab = 1">近況報告
+                <a class="nav-link" style="cursor: pointer;" data-toggle="tab" role="tab" @click="currentTab = 1">スポンサー様へ
                 </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" style="cursor: pointer;" data-toggle="tab" role="tab" @click="currentTab = 2">チャット
                 </a>
-              </li>
+              </li> -->
               <br>
             </ul>
           </div>
@@ -99,16 +99,20 @@
 
           <div role="tabpanel" v-show="currentTab === 1">
             <div class="introduce">
-              <h2>近況報告</h2>
+              <h2>スポンサー様へ</h2>
               <p>開発中</p>
             </div>
           </div>
 
-          <div role="tabpanel" v-show="currentTab === 2">
+          <!-- <div role="tabpanel" v-show="currentTab === 2">
             <div class="introduce">
               <h2>チャット</h2>
               <p>開発中</p>
             </div>
+          </div> -->
+
+          <div class="mt-5 text-center">
+            <a href="/chat/chat" class="btn btn-radius-solid" style="font-weight: bold;">メッセージを送る</a>
           </div>
 
         </div>

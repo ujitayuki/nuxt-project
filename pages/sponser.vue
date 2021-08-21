@@ -4,13 +4,6 @@
     <Header />
       <div class="dog-detail-wrap">
         <h1 class="dog-list-title"><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>スポンサー一覧</h1>
-        <div class="total-place">
-          <p>管理者：ujita yuki</p>
-          <p>支援額合計：10,000円</p>
-          <p>出金可能額：10,000円</p>
-          <a href="/payment/payment" class="btn btn-radius-solid" style="font-weight: bold;">出金申請</a>
-        </div>
-        <br>
         <div>
           <div class="nav-tabs-wrapper">
             <ul class="nav nav-tabs" role="tablist">
@@ -61,6 +54,12 @@
                   </li>
                 </ul>
               </div>
+            </div>
+            <br>
+             <div class="total-place">
+              <p>管理者：ujita yuki</p>
+              <p>支援額総合計：10,000円</p>
+              <a href="/payment/payment_detail" class="btn btn-radius-solid" style="font-weight: bold;">明細詳細</a>
             </div>
           </div>
 
@@ -125,6 +124,14 @@
                   </li>
                 </ul>
               </div>
+            </div>
+
+            <br>
+             <div class="total-place">
+              <p>管理者：ujita yuki</p>
+              <p>支援額合計：10,000円</p>
+              <p>出金可能額：10,000円</p>
+              <a href="/payment/payment" class="btn btn-radius-solid" style="font-weight: bold;">出金申請</a>
             </div>
           </div>
 

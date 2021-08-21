@@ -63,13 +63,6 @@
     "_name": "_5f867af7"
   },
   {
-    "name": "register",
-    "path": "/register",
-    "component": "/Users/user/Desktop/nuxt-project/pages/register.vue",
-    "chunkName": "pages/register",
-    "_name": "_30d8930f"
-  },
-  {
     "name": "sponser",
     "path": "/sponser",
     "component": "/Users/user/Desktop/nuxt-project/pages/sponser.vue",
@@ -77,11 +70,32 @@
     "_name": "_a32806b0"
   },
   {
+    "name": "test",
+    "path": "/test",
+    "component": "/Users/user/Desktop/nuxt-project/pages/test.vue",
+    "chunkName": "pages/test",
+    "_name": "_cb1a3904"
+  },
+  {
     "name": "welcome",
     "path": "/welcome",
     "component": "/Users/user/Desktop/nuxt-project/pages/welcome.vue",
     "chunkName": "pages/welcome",
     "_name": "_ee9951b4"
+  },
+  {
+    "name": "auth-register",
+    "path": "/auth/register",
+    "component": "/Users/user/Desktop/nuxt-project/pages/auth/register.vue",
+    "chunkName": "pages/auth/register",
+    "_name": "_5efe5424"
+  },
+  {
+    "name": "chat-chat",
+    "path": "/chat/chat",
+    "component": "/Users/user/Desktop/nuxt-project/pages/chat/chat.vue",
+    "chunkName": "pages/chat/chat",
+    "_name": "_46b599f3"
   },
   {
     "name": "my_page-dog_setting",
@@ -110,6 +124,13 @@
     "component": "/Users/user/Desktop/nuxt-project/pages/payment/payment.vue",
     "chunkName": "pages/payment/payment",
     "_name": "_4274757e"
+  },
+  {
+    "name": "payment-payment_detail",
+    "path": "/payment/payment_detail",
+    "component": "/Users/user/Desktop/nuxt-project/pages/payment/payment_detail.vue",
+    "chunkName": "pages/payment/payment_detail",
+    "_name": "_7a47dd3f"
   },
   {
     "name": "index",
