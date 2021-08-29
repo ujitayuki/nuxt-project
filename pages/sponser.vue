@@ -8,11 +8,11 @@
           <div class="nav-tabs-wrapper">
             <ul class="nav nav-tabs" role="tablist">
               <li class="nav-item">
-                <a class="nav-link" style="cursor: pointer;" data-toggle="tab" role="tab" @click="currentTab = 1">SPONSER
+                <a class="nav-link" style="cursor: pointer;" data-toggle="tab" role="tab" @click="currentTab = 1">MY SPONSER
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" style="cursor: pointer;" data-toggle="tab" role="tab" @click="currentTab = 2">MY SPONSER
+                <a class="nav-link" style="cursor: pointer;" data-toggle="tab" role="tab" @click="currentTab = 2">YOUR SPONSER
                 </a>
               </li>
               <br>
@@ -22,7 +22,7 @@
 
           <div role="tabpanel" v-show="currentTab === 1">
             <div class="introduce">
-              <h2>SPONSER</h2>
+              <h2>MY SPONSER</h2>
                <div>
                 <ul class="card-horizontal-list text-center">
                   <li>
@@ -65,7 +65,7 @@
 
           <div role="tabpanel" v-show="currentTab === 2">
             <div class="introduce">
-              <h2>MY SPONSER</h2>
+              <h2>YOUR SPONSER</h2>
               <div>
                 <ul class="card-horizontal-list text-center">
                   <li>

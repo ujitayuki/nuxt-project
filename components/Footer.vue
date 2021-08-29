@@ -19,9 +19,9 @@
               <li><a href="#">MENU</a></li>
               <ul class="list-unstyled">
                 <li><a href="/my_page/dog_setting">愛犬を掲載する</a></li>
+                <li><a href="/my_page/mypage_setting/">プロフィール編集</a></li>
                 <li><a href="/favorite">お気に入り</a></li>
-                <li><a href="/sponser/">スポンサー</a></li>
-                <li><a href="/my_page/mypage_setting/">プロフィール</a></li>
+                <li><a href="/sponser/">スポンサー一覧</a></li>
                 <li><a href="/my_page/home_list/">MY DOG一覧</a></li>
                 <!-- <li><a href="#">SUBMENU</a></li> -->
               </ul>

@@ -52,7 +52,7 @@
                 <a class="nav-link" style="cursor: pointer;" data-toggle="tab" role="tab" @click="currentTab = 0">自己紹介</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" style="cursor: pointer;" data-toggle="tab" role="tab" @click="currentTab = 1">近況報告
+                <a class="nav-link" style="cursor: pointer;" data-toggle="tab" role="tab" @click="currentTab = 1">スポンサー様へ
                 </a>
               </li>
               <br>
@@ -62,16 +62,16 @@
 
           <div role="tabpanel" v-show="currentTab === 0">
             <div class="introduce">
-              <textarea name="introduce" class="m-form-textarea"></textarea>
+              <textarea name="introduce" class="m-form-textarea" placeholder="自己紹介文"></textarea>
             </div>
           </div>
 
           <div role="tabpanel" v-show="currentTab === 1">
             <div class="introduce">
-              <textarea name="introduce" class="m-form-textarea"></textarea>
-              <div class="send-btn">
+              <textarea name="introduce" class="m-form-textarea" placeholder="スポンサー様へ"></textarea>
+              <!-- <div class="send-btn">
               <button type="button" class="btn btn-primary">送信</button>
-              </div>
+              </div> -->
             </div>
           </div>
 

@@ -70,13 +70,6 @@
     "_name": "_a32806b0"
   },
   {
-    "name": "test",
-    "path": "/test",
-    "component": "/Users/user/Desktop/nuxt-project/pages/test.vue",
-    "chunkName": "pages/test",
-    "_name": "_cb1a3904"
-  },
-  {
     "name": "welcome",
     "path": "/welcome",
     "component": "/Users/user/Desktop/nuxt-project/pages/welcome.vue",
@@ -131,6 +124,20 @@
     "component": "/Users/user/Desktop/nuxt-project/pages/payment/payment_detail.vue",
     "chunkName": "pages/payment/payment_detail",
     "_name": "_7a47dd3f"
+  },
+  {
+    "name": "sample-like",
+    "path": "/sample/like",
+    "component": "/Users/user/Desktop/nuxt-project/pages/sample/like.vue",
+    "chunkName": "pages/sample/like",
+    "_name": "_314004c0"
+  },
+  {
+    "name": "sample-register",
+    "path": "/sample/register",
+    "component": "/Users/user/Desktop/nuxt-project/pages/sample/register.vue",
+    "chunkName": "pages/sample/register",
+    "_name": "_285f93a8"
   },
   {
     "name": "index",

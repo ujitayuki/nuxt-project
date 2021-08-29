@@ -14,7 +14,6 @@ const _31f1213f = () => interopDefault(import('../pages/news.vue' /* webpackChun
 const _de8c89e8 = () => interopDefault(import('../pages/popular-dog.vue' /* webpackChunkName: "pages/popular-dog" */))
 const _5f867af7 = () => interopDefault(import('../pages/protection-group.vue' /* webpackChunkName: "pages/protection-group" */))
 const _a32806b0 = () => interopDefault(import('../pages/sponser.vue' /* webpackChunkName: "pages/sponser" */))
-const _cb1a3904 = () => interopDefault(import('../pages/test.vue' /* webpackChunkName: "pages/test" */))
 const _ee9951b4 = () => interopDefault(import('../pages/welcome.vue' /* webpackChunkName: "pages/welcome" */))
 const _5efe5424 = () => interopDefault(import('../pages/auth/register.vue' /* webpackChunkName: "pages/auth/register" */))
 const _46b599f3 = () => interopDefault(import('../pages/chat/chat.vue' /* webpackChunkName: "pages/chat/chat" */))
@@ -23,6 +22,8 @@ const _60e35e96 = () => interopDefault(import('../pages/my_page/home_list.vue' /
 const _243231b6 = () => interopDefault(import('../pages/my_page/mypage_setting.vue' /* webpackChunkName: "pages/my_page/mypage_setting" */))
 const _4274757e = () => interopDefault(import('../pages/payment/payment.vue' /* webpackChunkName: "pages/payment/payment" */))
 const _7a47dd3f = () => interopDefault(import('../pages/payment/payment_detail.vue' /* webpackChunkName: "pages/payment/payment_detail" */))
+const _314004c0 = () => interopDefault(import('../pages/sample/like.vue' /* webpackChunkName: "pages/sample/like" */))
+const _285f93a8 = () => interopDefault(import('../pages/sample/register.vue' /* webpackChunkName: "pages/sample/register" */))
 const _668170d4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -77,10 +78,6 @@ export const routerOptions = {
     component: _a32806b0,
     name: "sponser"
   }, {
-    path: "/test",
-    component: _cb1a3904,
-    name: "test"
-  }, {
     path: "/welcome",
     component: _ee9951b4,
     name: "welcome"
@@ -112,6 +109,14 @@ export const routerOptions = {
     path: "/payment/payment_detail",
     component: _7a47dd3f,
     name: "payment-payment_detail"
+  }, {
+    path: "/sample/like",
+    component: _314004c0,
+    name: "sample-like"
+  }, {
+    path: "/sample/register",
+    component: _285f93a8,
+    name: "sample-register"
   }, {
     path: "/",
     component: _668170d4,
